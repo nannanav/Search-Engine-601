@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Search</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>Simple Search Example</h1>
+<form action="/search" method="GET">
+    <input type="text" name="q" id="search-box" placeholder="Enter your search query" value="{{defaultValue}}"/>
+    <button type="submit">Search</button>
+</form>
+<form action="/safestop" method="POST">
+    <button type="submit">Stop Server</button>
+</form>
+<div id="results">
+    <pre id="json-result">{{searchResult}}</pre>
+</div>
+</body>
+</html>
